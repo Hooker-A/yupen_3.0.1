@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/ll_head_image"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/right_image_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:onClick="back"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/borrower_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_title_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/line_10px"
+                android:layout_width="match_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:padding="@dimen/base_line_padding"
+                android:text="@string/bdzq"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/holoandetail" />
+
+            <include
+                layout="@layout/line_10px"
+                android:layout_width="match_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:padding="@dimen/base_line_padding"
+                android:text="@string/Borrowing_information"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_personal_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_describe"
+                android:background="@color/listview_driver_color"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/base_activity_margin"
+                android:paddingLeft="@dimen/base_activity_margin"
+                android:paddingTop="@dimen/base_activity_margin">
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/yuchebao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px40"
+                    android:layout_marginLeft="@dimen/base_activity_margin"
+                    android:gravity="center"
+                    android:text="@string/personal_info"
+                    android:textColor="@color/vpi_title_text_color"
+                    android:textSize="@dimen/text_content_size" />
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:id="@+id/ll_card"
+               android:paddingTop="@dimen/base_line_padding"
+               ></LinearLayout>
+
+            <include
+                layout="@layout/line_10px"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <com.huaop2p.yqs.widget.CustomGridView
+                android:id="@+id/c_gv1"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:listSelector="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_describe"
+                android:background="@color/listview_driver_color"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/base_activity_margin"
+                android:paddingLeft="@dimen/base_line_padding"
+                android:paddingTop="@dimen/base_activity_margin">
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px40"
+                    android:layout_marginLeft="@dimen/base_activity_margin"
+                    android:gravity="center"
+                    android:text="@string/jkbxx"
+                    android:textColor="@color/vpi_title_text_color"
+                    android:textSize="@dimen/text_content_size" />
+            </LinearLayout>
+
+            <com.huaop2p.yqs.widget.CustomGridView
+                android:id="@+id/c_gv2"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:listSelector="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_describe"
+                android:background="@color/listview_driver_color"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/base_activity_margin"
+                android:paddingLeft="@dimen/base_line_padding"
+                android:paddingTop="@dimen/base_activity_margin">
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px40"
+                    android:layout_marginLeft="@dimen/base_activity_margin"
+                    android:gravity="center"
+                    android:text="@string/work_state"
+                    android:textColor="@color/vpi_title_text_color"
+                    android:textSize="@dimen/text_content_size" />
+            </LinearLayout>
+
+            <com.huaop2p.yqs.widget.CustomGridView
+                android:id="@+id/c_gv3"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:listSelector="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

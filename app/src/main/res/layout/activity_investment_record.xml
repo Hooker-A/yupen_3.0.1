@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:weightSum="6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_head_image"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/right_image_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:onClick="back"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TXT_APP_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/investment_record"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_title_size" />
+        </LinearLayout>
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@null"
+            android:text="@string/history"
+            android:textSize="@dimen/ordinary_text_content_size"
+            android:textColor="@color/black"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/base_line_padding"
+            android:onClick="startHistory"
+            />
+    </LinearLayout>
+<com.huaop2p.yqs.widget.pulltorefresh.PullToRefreshLayout
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/refresh_head" />
+
+    <com.huaop2p.yqs.widget.scroll.ScrollLayout
+        android:id="@+id/scrollableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_activity_margin"
+            android:layout_marginRight="@dimen/base_activity_margin"
+            android:paddingTop="@dimen/base_activity_margin"
+            android:background="@color/white">
+
+            <com.huaop2p.yqs.widget.ProgressView
+                android:id="@+id/pv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_wealth_progress_height" />
+
+            <TextView
+                android:id="@+id/tv_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2000000"
+                android:textColor="@color/red"
+                android:textSize="@dimen/select_text_content_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/dashed_height"
+                android:text="@string/str_count_money2"
+                android:textColor="@color/vpi_title_text_color"
+                android:textSize="@dimen/text_content_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/indictor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dashed_height"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_yuxinbao"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="switchFragment"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/yuxinbao__soild"
+                        android:gravity="center"
+                        android:text="@string/yuxinbao2"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/ordinary_text_content_size" />
+
+                    <TextView
+                        android:id="@+id/tv_yuxinbao_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yufangbao"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="switchFragment"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/yufangbao__soild"
+                        android:gravity="center"
+                        android:text="@string/yufangbao2"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/ordinary_text_content_size" />
+
+                    <TextView
+                        android:id="@+id/tv_yufangbao_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yuchebao"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="switchFragment"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/yuchebao_soild"
+                        android:gravity="center"
+                        android:text="@string/yuchebao2"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/ordinary_text_content_size" />
+
+                    <TextView
+                        android:id="@+id/tv_yuchebao_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/iv_bg"
+                    android:layout_width="0dip"
+                    android:layout_height="10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/vpi__tab_selected_holo" />
+            </LinearLayout>
+            <include layout="@layout/line_10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.huaop2p.yqs.widget.scroll.ScrollLayout>
+
+
+</com.huaop2p.yqs.widget.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

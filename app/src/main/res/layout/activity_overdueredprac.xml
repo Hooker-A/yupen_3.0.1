@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:id="@+id/linlayout_redpag"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/fanxianover">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/textview_￥"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:background="@drawable/fanxian_redover"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="25sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:id="@+id/tv_redmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/textview_￥"
+                android:textColor="#666666"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="50.00"/>
+
+            <TextView
+                android:id="@+id/tv_red_lastday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:textColor="#787878"
+                android:text="还有20天过期"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            >
+            <TextView
+                android:id="@+id/tv_red_dixian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:text="返现红包"
+                android:textColor="#EFEFEF"
+                android:textSize="25sp"/>
+
+            <ImageView
+                android:id="@+id/image_dixianred_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/tv_red_dixian"
+                android:src="@drawable/dixian_overred_point"/>
+            <TextView
+                android:id="@+id/tv_ben"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_red_dixian"
+                android:layout_toRightOf="@+id/image_dixianred_point"
+                android:layout_marginLeft="5dp"
+                android:text="冲抵投资本金"
+                android:textColor="#E05B51"
+                android:textSize="12sp"/>
+            <ImageView
+                android:id="@+id/image_dixianred_point2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/tv_red_dixian"
+                android:src="@drawable/dixian_overred_point"/>
+
+            <TextView
+                android:id="@+id/tv_red_manmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_dixianred_point2"
+                android:layout_below="@+id/tv_ben"
+                android:layout_marginLeft="5dp"
+                android:text="满500可用"
+                android:textColor="#E05B51"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_red_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期至2016-08-08"
+                android:layout_marginTop="96dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#787878"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

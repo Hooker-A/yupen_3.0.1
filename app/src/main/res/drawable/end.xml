@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@drawable/hobuy_s_1"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_2"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_3"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_4"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_5"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_6"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_7"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_8"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_9"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_10"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_11"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/hobuy_s_12"
+        android:duration="50" />
+
+</animation-list>

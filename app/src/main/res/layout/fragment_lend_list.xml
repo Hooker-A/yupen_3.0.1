@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+<ExpandableListView
+    android:id="@+id/mListView"
+    android:layout_width="wrap_content"
+    android:dividerHeight="@dimen/drop_down_list_footer_button_margin_left"
+    android:childDivider="@color/listview_driver_color"
+    android:divider="@color/listview_driver_color"
+    android:layout_height="match_parent"/>
+</LinearLayout>

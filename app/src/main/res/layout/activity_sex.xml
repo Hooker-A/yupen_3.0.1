@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/includeTitle"
+        layout="@layout/app_titl" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <include layout="@layout/include_layout_view"></include>
+
+    <LinearLayout
+        android:id="@+id/rl_boy"
+        style="@style/relative_item_list_layout_nospace"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_boy"
+            style="@style/relative_item_list_text"
+            android:text="@string/str_boy" />
+
+        <CheckBox
+            android:id="@+id/img_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="250dp"
+            android:visibility="gone"
+            android:button="@null"
+            android:background="@drawable/duihao" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+    <LinearLayout
+        android:id="@+id/rl_gril"
+        style="@style/relative_item_list_layout_nospace"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/txt_gril"
+
+            style="@style/relative_item_list_text"
+            android:text="@string/str_gril" />
+
+        <CheckBox
+            android:id="@+id/img_gril"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="250dp"
+            android:visibility="gone"
+            android:background="@drawable/duihao" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_linearlayout_left_space_view"></include>
+    <include layout="@layout/include_layout_view"></include>
+
+
+</LinearLayout>

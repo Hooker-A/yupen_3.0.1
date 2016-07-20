@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/app_titl"/>
+    <com.huaop2p.yqs.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:background="@drawable/duiduidui"
+            android:layout_height="30dp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:text="认证成功"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_bg"
+        android:padding="5dp"
+        android:layout_height="170dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="实名信息"
+            android:textSize="15sp"
+            android:textColor="@color/ipone_num_color"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/sfrz002"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="姓名是"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/txt_qian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="158"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="****"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/txt_hou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="8888"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grey_home"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="证件类型:"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/txt_pap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="身份证"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="证  件  号:"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="******"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="********"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/txt_codehou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="8888"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_bg"
+        android:padding="5dp"
+        android:layout_height="170dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="银行卡"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/ipone_num_color"
+            />
+        <LinearLayout
+            android:id="@+id/ll_rankBrang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/txt_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="民生银行"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="38dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="******"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="********"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_rankhou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="8888"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </com.huaop2p.yqs.widget.ReboundScrollView>
+</LinearLayout>

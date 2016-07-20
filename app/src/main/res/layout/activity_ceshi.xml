@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qian_grey"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/includeTitle"
+        layout="@layout/app_titl" />
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/background" >
+        <LinearLayout
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_weizzhib"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/weizhi001"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_set_adresschoose_sheng_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/my_set_adresschoose_shi_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text=""
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/my_set_adresschoose_qu_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text=""
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/my_set_adresschoose_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+<!--省-->
+        <ListView
+            android:id="@+id/my_set_adresschoose_listview_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:divider="@color/what"
+            android:scrollbars="none"
+            android:cacheColorHint="@null">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_set_adresschoose_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/what" >
+
+            <!--<TextView-->
+                <!--android:id="@+id/my_set_adresschoose_sheng_2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textColor="#36428c"-->
+                <!--android:text="广东省"-->
+                <!--android:textSize="20sp" />-->
+
+        </LinearLayout>
+<!--市-->
+        <ListView
+            android:id="@+id/my_set_adresschoose_listview_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/what"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:cacheColorHint="@null">
+
+        </ListView>
+    </LinearLayout>
+<!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:id="@+id/my_set_adresschoose_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+
+
+
+<!--区listview-->
+        <ListView
+            android:id="@+id/my_set_adresschoose_listview_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/what"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:cacheColorHint="@null">
+
+        </ListView>
+
+
+
+    </LinearLayout>
+    <!--<com.huao.yupen_three.widget.SideBar-->
+        <!--android:id="@+id/city_ctionbar"-->
+        <!--android:layout_width="30.0dip"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_gravity="right|center"-->
+        <!--android:paddingBottom="2dp" />-->
+<!--</FrameLayout>-->
+
+
+</LinearLayout>

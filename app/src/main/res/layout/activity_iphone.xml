@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/includeTitle"
+        layout="@layout/app_titl"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <include layout="@layout/include_layout_view"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_secrecy"
+        style="@style/relative_item_list_layout_nospace"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/txt_iphone"
+            style="@style/relative_item_list_text"
+            android:text="13718132104" />
+
+    </RelativeLayout>
+    <include layout="@layout/include_layout_view"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手机号码暂时不能直接修改 , 如需修改请联系客服"
+        android:padding="10dp"
+        android:textColor="@color/ipone_num_color"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_help_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/img_iphone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/withe"
+            android:src="@drawable/dianhua001"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

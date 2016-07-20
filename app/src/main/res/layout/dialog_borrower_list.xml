@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_rectangle_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/str_borrowe_list"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right">
+
+            <ImageButton
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:background="@drawable/btn_close_bg"
+                android:ellipsize="end"
+                android:onClick="back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_big_size2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/common_listview"
+        android:layout_width="match_parent"
+        android:layout_height="600px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_change"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dashed_height"
+            android:layout_weight="1"
+            android:background="@color/h_b_bg"
+            android:padding="@dimen/base_line_padding"
+            android:text="换一批"
+            android:onClick="change"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <Button
+            android:id="@+id/btn_confim"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dashed_height"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:onClick="back"
+            android:padding="@dimen/base_line_padding"
+            android:text="@string/queding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+    </LinearLayout>
+</LinearLayout>

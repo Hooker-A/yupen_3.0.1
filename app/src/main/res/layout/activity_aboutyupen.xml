@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/includeTitle"
+        layout="@layout/app_titl"/>
+    <com.huaop2p.yqs.widget.TabPageIndicator
+        android:id="@+id/indictor"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_yupen_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/pre_fragement_1">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--<WebView-->
+        <!--android:id="@+id/webview_msg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></WebView>-->
+
+</LinearLayout>

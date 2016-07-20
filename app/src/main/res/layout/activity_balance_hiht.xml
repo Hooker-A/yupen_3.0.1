@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/px60"
+        android:layout_gravity="center"
+        android:text="@string/balance_hiht"
+        android:textColor="@color/red"
+        android:drawableLeft="@drawable/balance_hiht"
+        android:textSize="@dimen/small_title_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_gray"
+            android:padding="@dimen/base_line_padding"
+            android:text="@string/update_money"
+            android:textColor="@color/textcolor"
+            android:onClick="back"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <Button
+            android:onClick="recharge"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_yellow_rb"
+            android:padding="@dimen/base_line_padding"
+            android:text="@string/str_recharge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </LinearLayout>
+</LinearLayout>

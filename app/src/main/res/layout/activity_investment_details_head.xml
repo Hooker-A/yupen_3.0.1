@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_line_padding"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/base_line_padding">
+
+        <com.huaop2p.yqs.widget.MyTextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/px5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_activity_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_title_size" />
+
+        <LinearLayout
+            android:id="@+id/ll_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Currentincome2"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/ordinary_text_content_size" />
+
+    <com.huaop2p.yqs.widget.CustomTextView
+        android:id="@+id/c_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:bigSize="4"
+        app:smallSize="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashed_height"
+        android:layout_margin="@dimen/base_line_padding"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_red_value1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/h_b_bg" />
+
+            <TextView
+                android:id="@+id/tv_InvestmentMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/investment_money3"
+                android:textColor="@color/textcolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_YearRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_red_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/h_b_bg"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/h_r_income2"
+                android:textColor="@color/textcolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_red_value3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/h_b_bg" />
+
+            <TextView
+                android:id="@+id/tv_OtherIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expectedReturn"
+                android:textColor="@color/textcolor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/base_line_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_red"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_red_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/h_b_bg"
+            android:textSize="@dimen/text_content_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:padding="@dimen/base_line_padding">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0个月"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_investment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date"
+            android:text="@string/home_date"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0天"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_sy_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_day"
+            android:text="@string/sy_day"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <com.huaop2p.yqs.widget.CostomProgress
+            android:id="@+id/cp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sy_day"
+            android:layout_alignTop="@+id/tv_date"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_toLeftOf="@+id/tv_sy_day"
+            android:layout_toRightOf="@+id/tv_investment_date" />
+
+        <TextView
+            android:id="@+id/tv_qixi_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sy_day"
+            android:layout_marginTop="@dimen/base_activity_margin"
+            android:text="@string/qixi_day"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_qixi_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_qixi_day"
+            android:layout_toRightOf="@+id/tv_qixi_day"
+            android:text="2015-1-1"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_expire_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sy_day"
+            android:layout_marginTop="@dimen/base_activity_margin"
+            android:layout_toLeftOf="@+id/tv_expire_date"
+            android:text="@string/expire_day"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_qixi_day"
+            android:text="2015-1-1"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/base_line_padding"
+        android:paddingTop="@dimen/base_line_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投资时间："
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_inverstment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/text_content_size" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/line_10px"
+        android:layout_width="match_parent"
+        android:layout_height="10px" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_head_height"
+        android:background="@color/white"
+        android:drawableRight="@drawable/black_right"
+        android:gravity="left|center"
+        android:onClick="startWeb"
+        android:paddingLeft="@dimen/base_line_padding"
+        android:paddingRight="@dimen/base_line_padding"
+        android:text="电子合同"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/ordinary_text_content_size" />
+
+    <include
+        layout="@layout/line_10px"
+        android:layout_width="match_parent"
+        android:layout_height="10px" />
+</LinearLayout>

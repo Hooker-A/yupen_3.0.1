@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huaop2p.yqs.widget.pulltorefresh.PullToRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/mListView"
+    android:dividerHeight="0dp"
+    android:scrollbars="none"
+    android:divider="@null"
+    ptr:ptrHeaderBackground="@color/white"
+    ptr:ptrRefreshableViewBackground ="@color/listview_driver_color"
+    />
+

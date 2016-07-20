@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 整体透明画布 -->
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 扫描取景框 -->
+    <com.huaop2p.yqs.module.one_home.Module.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="@color/white">
+
+
+        <ImageButton
+            android:id="@+id/capture_imageview_back"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:paddingBottom="3dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="扫描二维码"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_sq"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:onClick="inputCusManager"
+            android:background="@drawable/withe"
+            android:layout_alignParentRight="true"
+            android:text="申请客户经理"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+
+
+</merge>

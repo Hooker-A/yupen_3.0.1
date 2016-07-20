@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/line1"
+        layout="@layout/line_10px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_activity_margin" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_margin="@dimen/base_line_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big_size" />
+
+    <LinearLayout
+        android:id="@+id/ll_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_name"
+        android:layout_marginRight="@dimen/base_line_padding"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dream_year_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:text="@string/h_r_income2"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/text_content_size" />
+
+    <TextView
+        android:id="@+id/home_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ll_flag"
+        android:layout_below="@+id/tv_name"
+        android:text="@string/home_date"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/text_content_size" />
+
+    <com.huaop2p.yqs.widget.CustomTextView
+        android:id="@+id/tv_gains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_dream_year_input"
+        app:bigSize="3"
+        app:smallSize="1.5" />
+
+    <com.huaop2p.yqs.widget.CustomTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_gains"
+        android:layout_alignBottom="@+id/tv_gains"
+        android:layout_alignRight="@+id/home_date"
+        android:layout_marginBottom="@dimen/base_line_padding"
+        app:bigSize="3"
+        app:smallSize="1.5" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_below="@+id/tv_gains"
+        android:layout_margin="@dimen/base_line_padding"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress5dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/qixi_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_below="@+id/progressBar"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/text_content_size" />
+
+    <TextView
+        android:id="@+id/baifenhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_below="@+id/progressBar"
+        android:text="%"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/text_content_size" />
+
+    <TextView
+        android:id="@+id/shengyu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginLeft="@dimen/base_activity_margin"
+        android:layout_marginRight="@dimen/base_activity_margin"
+        android:layout_toLeftOf="@+id/baifenhao"
+        android:text="0.00"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_content_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_toLeftOf="@+id/shengyu"
+        android:text="@string/residual_fraction"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/text_content_size" />
+
+    <View
+        android:id="@+id/drive_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_activity_margin"
+        android:layout_below="@+id/shengyu"
+        android:layout_marginTop="10px"
+        android:background="@color/listview_driver_color" />
+
+    <RelativeLayout
+        android:id="@+id/money_detail"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/drive_line">
+
+        <include
+            android:id="@+id/drive_line2"
+            layout="@layout/line_10px"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/base_activity_margin" />
+
+        <TextView
+            android:id="@+id/dosage"
+            android:layout_width="@dimen/half_widght"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_activity_margin"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="@dimen/half_widght"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dosage"
+            android:gravity="center"
+            android:text="@string/dosage"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/residual_amount"
+            android:layout_width="@dimen/half_widght"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/base_activity_margin"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="@dimen/half_widght"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dosage"
+            android:gravity="center"
+            android:text="@string/residual_amount"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_content_size" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/drive_line3"
+        layout="@layout/line_10px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_activity_margin"
+        android:layout_below="@+id/money_detail" />
+
+    <include layout="@layout/head_progress" />
+</RelativeLayout>

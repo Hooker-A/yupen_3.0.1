@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/includeTitle"
+        layout="@layout/app_titl" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信验证码已发送至"
+                android:textColor="@color/texthui" />
+
+            <TextView
+                android:id="@+id/txt_iphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  "
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请注意查收"
+                android:textColor="@color/texthui" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+
+            <com.huaop2p.yqs.module.base.view.ClearEditText
+                android:id="@+id/txt_yzmcode"
+                style="@style/clear_edit_com_style"
+                android:drawableLeft="@drawable/shouji001"
+                android:hint="请输入验证码"
+                android:inputType="number"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btn_forget"
+                style="@style/btn_nextT"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/huise_button"
+                android:clickable="false"
+                android:text="@string/app_nextstep" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <!--<com.huao.yupen_three.widget.Anticlockwise-->
+                <!--android:id="@+id/ak_duanxin"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:enabled="false"-->
+
+                <!--/>-->
+
+            <TextView
+                android:id="@+id/txt_fasong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "
+                android:textColor="@color/yufangbao" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

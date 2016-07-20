@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>预约详情</title>
+		<!--<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script> 
+		<script>//位置要放在这里 不要改动
+			$(document).ready(
+				function() {
+					function zoom() {
+						var zoom = $(window).width() / 750;
+						$("body").css("zoom", zoom).show();
+					}
+					zoom();
+					window.onresize = zoom;
+
+				}
+			)
+		</script>-->
+		<link rel="stylesheet" href="css/promisesecuse.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div>
+				<div class="yes">
+					<img src="img/promise-img/yes.jpg" />
+					<p>投资预约成功</p>
+				</div>
+				<div class="form2">
+					<ul>
+						<li><em>产品类型</em><span>A1 10万-50万（不包括50万）8.0% 6个月</span></li>
+						<li><em>投资期限</em><span>6个月</span></li>
+						<li><em>约定收益率</em><span>8.0%</span></li>
+						<li><em>分配方式</em><span>到期分配</span></li>
+						<li style="border: none;"><em>计息方式</em><span>当日计息</span></li>
+					</ul>
+
+				</div>
+				</form>
+
+				<div class="footer" style="text-align:center; margin-top: 2.0rem; line-height: 1.6rem; font-size: 1.2rem; color:#999999;">
+
+					<span>工作人员会在两个工作日内与您取得联系。</span></br>
+					<span>如有其它疑问，请拨打客服电话 400-838-9595。</span>
+
+				</div>
+
+				<input type="button" class="seccuse" id="seccuse" value="完成" style="-webkit-appearance: none; border: none; height: 3.5rem; line-height: 3.5rem;"></input>
+
+			</div>
+		</div>
+		</div>
+			<iframe src="sharetest://data/123456789"></iframe>
+	</body>
+	<script src="js/jquery-1.10.1.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("#seccuse").click(function() {
+				window.location = "huaoyupen://"
+			})
+		})
+	</script>
+
+</html>

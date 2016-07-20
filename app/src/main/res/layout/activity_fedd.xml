@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/EEE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/img_Back"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|center"
+            android:background="@color/white"
+            android:onClick="returnBack"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+
+        <TextView
+            android:id="@+id/TXT_APP_TITLE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:clickable="false"
+            android:text="发送"
+            android:textColor="@color/huise"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/edit_faceback"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="请简要描述你的问题或意见"
+                    android:textColorHint="@color/hintcoler"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:textCursorDrawable="@null" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.huaop2p.yqs.module.base.view.ClearEditText
+                    android:id="@+id/txt_iphone"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="40dp"
+                    android:hint="选填,请留下联系方式,以便与您联系."
+                    android:textColorHint="@color/hintcoler"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/txt_z_view"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:padding="8dp"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="    选填,上传相关图片" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:background="@drawable/withe"
+                android:gravity="center|left"
+                >
+                <ImageView
+                    android:id="@+id/tm_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/photo"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp"/>
+                <ImageView
+                    android:id="@+id/gd_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/photo"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp"/>
+                <ImageView
+                    android:id="@+id/im_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/photo"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp"/>
+                <ImageView
+                    android:id="@+id/im_foru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/photo"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

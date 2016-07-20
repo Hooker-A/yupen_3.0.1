@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/ll_head_image"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/right_image_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:onClick="back"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TXT_APP_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/investment_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_title_size" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_transfer"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/base_line_padding"
+            android:text="转让"
+            android:visibility="gone"
+            android:onClick="transfer"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_title_size" />
+    </LinearLayout>
+    <com.huaop2p.yqs.widget.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@id/ll_top"
+        android:background="@color/listview_driver_color">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.huaop2p.yqs.widget.scroll.ScrollLayout
+            android:id="@+id/scrollableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <include
+                layout="@layout/activity_investment_details_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.huaop2p.yqs.widget.TabPageIndicator
+                android:id="@+id/indictor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_indicator_height"
+                android:layout_alignParentBottom="true" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.huaop2p.yqs.widget.scroll.ScrollLayout>
+    </com.huaop2p.yqs.widget.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

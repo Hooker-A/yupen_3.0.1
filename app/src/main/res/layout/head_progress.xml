@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <RelativeLayout
+        android:id="@+id/rl_progress1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drive_line3">
+
+        <TextView
+            android:id="@+id/tv_shouyilv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/rate_of_return_of_the_product"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_shouyilv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:layout_marginTop="@dimen/px5"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_content_size" />
+
+        <com.huaop2p.yqs.widget.CostomProgress
+            android:id="@+id/progressBar2"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_marginTop="@dimen/px5"
+            android:layout_toLeftOf="@+id/tv_shouyilv_value"
+            android:layout_toRightOf="@+id/tv_shouyilv"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_progress1">
+
+        <TextView
+            android:id="@+id/caifutong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:text="@string/Money_paid_through_rate_of_return"
+            android:textColor="@color/progress_color"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/caifutong_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:textColor="@color/progress_color"
+            android:textSize="@dimen/text_content_size" />
+
+        <com.huaop2p.yqs.widget.CostomProgress
+            android:id="@+id/progressBar5"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_marginTop="@dimen/px5"
+            android:layout_toLeftOf="@+id/caifutong_value"
+            android:layout_toRightOf="@+id/caifutong"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_progress4">
+
+        <TextView
+            android:id="@+id/yuebao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:text="@string/balance_treasure_yield"
+            android:textColor="@color/progress_color"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/yuebao_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:textColor="@color/progress_color"
+            android:textSize="@dimen/text_content_size" />
+
+        <com.huaop2p.yqs.widget.CostomProgress
+            android:id="@+id/progressBar6"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_marginTop="@dimen/px5"
+            android:layout_toLeftOf="@+id/yuebao_value"
+            android:layout_toRightOf="@+id/yuebao"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_progress5">
+
+        <TextView
+            android:id="@+id/tv_regular_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:text="@string/regular_rate_of_bank_interest_rates"
+            android:textColor="@color/progress_color"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_regular_rate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:textColor="@color/progress_color"
+            android:textSize="@dimen/text_content_size" />
+
+        <com.huaop2p.yqs.widget.CostomProgress
+            android:id="@+id/progressBar3"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_marginTop="@dimen/px5"
+            android:layout_toLeftOf="@+id/tv_regular_rate_value"
+            android:layout_toRightOf="@+id/tv_regular_rate"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_progress2">
+
+        <TextView
+            android:id="@+id/tv_current_interest_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:text="@string/bank_current_interest_rate"
+            android:textColor="@color/progress_color"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_current_interest_rate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_marginRight="@dimen/base_line_padding"
+            android:layout_marginBottom="@dimen/px5"
+            android:textColor="@color/progress_color"
+            android:textSize="@dimen/text_content_size" />
+
+        <com.huaop2p.yqs.widget.CostomProgress
+            android:id="@+id/progressBar4"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_marginTop="@dimen/px5"
+            android:layout_toLeftOf="@+id/tv_current_interest_rate_value"
+            android:layout_toRightOf="@+id/tv_current_interest_rate"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/line_10px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_activity_margin"
+        android:layout_below="@+id/rl_progress3" />
+</merge>

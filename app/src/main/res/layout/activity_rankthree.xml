@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_titl" />
+    <com.huaop2p.yqs.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/jd3" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="实名认证"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="-10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="绑定银行卡"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="      为了您的账户安全,我们将单独为您开设用于资金往来的 金账户 ,请设置金账户登录密码和提现密码"
+                android:textColor="@color/huise" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="金账户登录密码"
+                    android:textColor="@color/huise" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.huaop2p.yqs.module.base.view.ClearEditText
+                    android:id="@+id/cet_logopass1"
+                    style="@style/clear_edit_com_style"
+                    android:drawableLeft="@drawable/mima001"
+                    android:hint="请输入密码"
+                    android:password="true"
+                    android:padding="5dp" />
+
+                <com.huaop2p.yqs.module.base.view.ClearEditText
+                    android:id="@+id/cet_logopass2"
+                    style="@style/clear_edit_com_style"
+                    android:drawableLeft="@drawable/mima001"
+                    android:layout_marginTop="10dp"
+                    android:password="true"
+                    android:hint="请再次输入密码,以确认"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:padding="10dp"
+                    android:text="登录密码为8位以上字母和数字组合"
+                    android:textColor="@color/huise" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="金账户提现密码"
+                    android:textColor="@color/huise" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.huaop2p.yqs.module.base.view.ClearEditText
+                    android:id="@+id/cet_logopass3"
+                    style="@style/clear_edit_com_style"
+                    android:drawableLeft="@drawable/mima001"
+                    android:password="true"
+                    android:hint="请输入密码"
+                    android:padding="5dp" />
+
+                <com.huaop2p.yqs.module.base.view.ClearEditText
+                    android:id="@+id/cet_logopass4"
+                    style="@style/clear_edit_com_style"
+                    android:drawableLeft="@drawable/mima001"
+                    android:layout_marginTop="10dp"
+                    android:hint="请再次输入密码,以确认"
+                    android:password="true"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:padding="10dp"
+                    android:text="登录密码为8位以上字母和数字组合"
+                    android:textColor="@color/huise" />
+                <Button
+                    android:id="@+id/btn_ok"
+                    style="@style/btn_nextT"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/huise_button"
+                    android:clickable="false"
+                    android:textColor="@color/white"
+                    android:text="@string/str_confirm" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击 '确定' 按钮,即表示同意"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/txt_xieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《托管服务协议》"
+                    android:textColor="@color/y_f_b" />
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/transparent"
+                />
+
+        </LinearLayout>
+    </com.huaop2p.yqs.widget.ReboundScrollView>
+
+
+
+
+
+
+</LinearLayout>

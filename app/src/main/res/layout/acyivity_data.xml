@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/includeTitle"
+        layout="@layout/app_titl" />
+
+    <com.huaop2p.yqs.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qian_grey"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+            <RelativeLayout
+                android:id="@+id/rl_touxiang"
+                style="@style/relative_item_list_layout_nospace"
+                android:gravity="center"
+                android:background="@color/white">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        style="@style/relative_item_list_text"
+                        android:text="@string/str_touxiang" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.huaop2p.yqs.widget.CircleImageView
+                        android:id="@+id/txt_data_hand"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        style="@style/data_item_list_text"
+                        android:layout_marginLeft="260dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/wodelg"
+                        />
+                </LinearLayout>
+
+
+                <ImageView style="@style/relative_item_list_toright_img" />
+            </RelativeLayout>
+            <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+            <RelativeLayout
+                android:id="@+id/rl_nicheng"
+                style="@style/relative_item_list_layout_nospace"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        style="@style/relative_item_list_text"
+                        android:text="@string/str_nicheng" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_data_nick"
+                        style="@style/data_item_list_text"
+                        android:layout_marginRight="35dp"
+                        android:gravity="right|center"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="" />
+                </LinearLayout>
+
+
+                <ImageView style="@style/relative_item_list_toright_img" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+            <RelativeLayout
+                android:id="@+id/rl_xingbie"
+                style="@style/relative_item_list_layout_nospace"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/relative_item_list_text"
+                        android:text="@string/str_xingbie" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_data_sex"
+                        style="@style/data_item_list_text"
+                        android:layout_marginLeft="110dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:gravity="right|center"
+                        android:layout_marginRight="35dp"
+
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView style="@style/relative_item_list_toright_img" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+            <RelativeLayout
+                android:id="@+id/rl_iphone"
+                style="@style/relative_item_list_layout_nospace"
+
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        style="@style/relative_item_list_text"
+                        android:text="@string/str_iphone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_data_iphone"
+                        style="@style/data_item_list_text"
+                        android:layout_marginLeft="110dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:gravity="right|center"
+                        android:layout_marginRight="35dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView style="@style/relative_item_list_toright_img" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+            <RelativeLayout
+                android:id="@+id/rl_youxiang"
+                style="@style/relative_item_list_layout_nospace"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        style="@style/relative_item_list_text"
+                        android:text="@string/str_youxiang" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_data_emil"
+                        style="@style/data_item_list_text"
+                        android:layout_marginLeft="110dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:gravity="right|center"
+                        android:layout_marginRight="35dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView style="@style/relative_item_list_toright_img" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_diqu"
+                style="@style/relative_item_list_layout_nospace"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        style="@style/relative_item_list_text"
+                        android:text="@string/str_diqu" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_data_area"
+                        style="@style/data_item_list_text"
+                        android:layout_marginLeft="110dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:gravity="right|center"
+                        android:layout_marginRight="35dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView style="@style/relative_item_list_toright_img" />
+
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+            <RelativeLayout
+                android:id="@+id/rl_dizhi"
+                style="@style/relative_item_list_layout_nospace"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/relative_item_list_text"
+                        android:text="@string/str_address" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_data_site"
+                        style="@style/data_item_list_text"
+                        android:layout_marginLeft="110dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:gravity="right|center"
+                        android:layout_marginRight="35dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView style="@style/relative_item_list_toright_img" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_linearlayout_left_space_view"></include>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/transparent"
+                />
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_diz"-->
+                <!--style="@style/relative_item_list_layout_nospace"-->
+                <!--android:background="@color/white">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/relative_item_list_text"-->
+                        <!--android:text="@string/str_dizhi" />-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/txt_data_s"-->
+                        <!--style="@style/data_item_list_text"-->
+                        <!--android:layout_marginLeft="110dp"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textSize="15sp"-->
+
+                        <!--android:text="137181444444" />-->
+                <!--</LinearLayout>-->
+
+                <!--<ImageView style="@style/relative_item_list_toright_img" />-->
+            <!--</RelativeLayout>-->
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </com.huaop2p.yqs.widget.ReboundScrollView>
+
+</LinearLayout>

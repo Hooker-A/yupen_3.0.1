@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/red_pop"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/give"
+
+        >
+
+        <Button
+            android:id="@+id/btn_zengG"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/wrong" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="75dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_money_z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="888"
+                android:textColor="@color/orync"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_zeng"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                android:background="@drawable/give2" />
+
+            <Button
+                android:id="@+id/btn_yaoyao"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rock" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</RelativeLayout>

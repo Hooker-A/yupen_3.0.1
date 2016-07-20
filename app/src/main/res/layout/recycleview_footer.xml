@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:paddingBottom="50dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有更多有效红包了 |  "
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/textview_overRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看过期红包>"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

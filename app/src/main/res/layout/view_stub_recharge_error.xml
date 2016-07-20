@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_line_padding"
+        android:text="可能失败的原因及解决方案"
+        android:textColor="@color/textcolor4"
+        android:textSize="@dimen/ordinary_text_content_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_line_padding"
+            android:paddingLeft="@dimen/base_line_padding"
+            android:paddingTop="@dimen/base_line_padding"
+            android:text="1、"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_cause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_one"
+            android:text="失败原因"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_cause"
+            android:padding="@dimen/base_line_padding"
+            android:text="银行卡余额不足"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_line_padding">
+
+        <TextView
+            android:id="@+id/tv_one_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_one_red"
+            android:text="解决方案"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_plan_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_toRightOf="@+id/tv_plan"
+            android:text="请及时往此银行卡存款、转账,或更换银行卡。更换银行卡请联系客服400-838-9595"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_line_padding"
+            android:paddingLeft="@dimen/base_line_padding"
+            android:paddingTop="@dimen/base_line_padding"
+            android:text="2、"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_cause_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_two"
+            android:text="失败原因"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_cause_two"
+            android:padding="@dimen/base_line_padding"
+            android:text="数据网络异常"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_line_padding">
+
+        <TextView
+            android:id="@+id/tv_two_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_plan_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_two_red"
+            android:text="解决方案"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_plan_two_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_toRightOf="@+id/tv_plan_two"
+            android:text="请检查网络设置"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_line_padding"
+            android:paddingLeft="@dimen/base_line_padding"
+            android:paddingTop="@dimen/base_line_padding"
+            android:text="3、"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_cause_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_three"
+            android:text="失败原因"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_cause_three"
+            android:padding="@dimen/base_line_padding"
+            android:text="银行卡被冻结"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_line_padding">
+
+        <TextView
+            android:id="@+id/tv_three_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_plan_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_three_red"
+            android:text="解决方案"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_plan_three_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_toRightOf="@+id/tv_plan_three"
+            android:text="请及时和银行联系或更换银行卡。更换银行卡请联系客服400-838-9595"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_three1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_line_padding"
+            android:paddingLeft="@dimen/base_line_padding"
+            android:paddingTop="@dimen/base_line_padding"
+            android:text="4、"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_cause_three1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_three1"
+            android:text="失败原因"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_cause_three1"
+            android:padding="@dimen/base_line_padding"
+            android:text="充值超过限额"
+            android:textColor="@color/textcolor4"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_line_padding">
+
+        <TextView
+            android:id="@+id/tv_four_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_four_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_four_red"
+            android:text="解决方案"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_plan_four_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_line_padding"
+            android:layout_toRightOf="@+id/tv_four_three"
+            android:text="充值金额小于限额"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashed_height"
+        android:layout_margin="@dimen/px50"
+        android:background="@drawable/rounded_rectangle_red"
+        android:text="重试"
+        android:onClick="retry"
+        android:textColor="@color/white" />
+</LinearLayout>

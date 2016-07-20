@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listview_driver_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_line_padding"
+            android:text="@string/yjdzsj"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:text="两个工作日内"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/base_line_padding"
+        android:background="@color/qian_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_line_padding"
+            android:text="@string/str_card_num"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_card_num_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/base_line_padding"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/qian_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_line_padding"
+            android:text="@string/str_bank"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/base_line_padding"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/qian_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_line_padding"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_line_padding"
+            android:text="@string/str_cash_num2"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_recharge_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/base_line_padding"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/qian_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listview_driver_color"
+        android:padding="@dimen/base_line_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大写"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:onClick="end"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dashed_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/px40"
+            android:background="@drawable/rounded_rectangle_red"
+            android:text="@string/str_next_step"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ordinary_text_content_size" />
+    </FrameLayout>
+</LinearLayout>

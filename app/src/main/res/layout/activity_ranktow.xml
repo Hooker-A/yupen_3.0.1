@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left|center"
+            android:background="@color/white"
+            android:onClick="returnBack"
+            android:paddingBottom="3dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back"/>
+
+
+        <TextView
+            android:id="@+id/TXT_APP_TITLE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="身份认证"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_tiaoguo"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:text="@string/tiaoguo"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise"
+        />
+
+
+
+
+    <com.huaop2p.yqs.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/jd2" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="实名认证"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="绑定银行卡"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                >
+                <TextView
+                    android:id="@+id/cet_bank"
+                    style="@style/clear_edit_com_style"
+                    android:drawableLeft="@drawable/yh001"
+                    android:gravity="center|left"
+                    android:hint="请选择发卡银行"
+                    />
+                <com.huaop2p.yqs.module.base.view.ClearEditText
+                    android:id="@+id/cet_bankcode"
+                    style="@style/clear_edit_com_style"
+                    android:drawableLeft="@drawable/yhk001"
+                    android:hint="请输入银行卡号"
+                    android:maxLength="19"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    />
+
+
+                <TextView
+                    android:id="@+id/cet_weizhi"
+                    style="@style/clear_edit_com_style"
+                    android:drawableLeft="@drawable/dz001"
+                    android:gravity="center|left"
+                    android:layout_marginTop="10dp"
+                    android:hint="请选择开户行所属地区"
+                    />
+
+                <Button
+                    android:id="@+id/btn_banktijiao"
+                    style="@style/btn_nextT"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/huise_button"
+                    android:clickable="false"
+                    android:textColor="@color/white"
+                    android:text="@string/str_tijiao" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/transparent"
+                />
+
+        </LinearLayout>
+    </com.huaop2p.yqs.widget.ReboundScrollView>
+
+
+
+
+</LinearLayout>

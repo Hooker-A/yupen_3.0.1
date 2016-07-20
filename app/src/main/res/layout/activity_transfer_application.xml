@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/ll_head_image"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:background="@null"
+                android:onClick="back"
+                android:text="@string/cancel"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TXT_APP_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/zezq"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_title_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashed_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:text="@string/Application_for_transfer"
+        android:onClick="applicationTransfer"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ordinary_text_content_size" />
+
+    <com.huaop2p.yqs.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_bottom"
+        android:layout_below="@+id/ll_top"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/line_10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/product_name2"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="余信宝"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/text_content_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/investment_quota"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/tv_InvestmentMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="20000元"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/text_content_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/percentages"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/tv_YearRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="11%"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/text_content_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/Generate_income"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/tv_gains"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="110元"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/residual_maturity"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/tv_remaining_maturity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="20天"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/line_10px"
+                android:layout_width="match_parent"
+                android:layout_height="5px" />
+
+            <com.huaop2p.yqs.widget.FoldGroupView
+                android:id="@+id/mfgv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_head_height"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="更多信息"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_line_padding"
+                        android:src="@drawable/black_down" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/listview_driver_color" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/user_head_height"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:layout_marginRight="@dimen/base_line_padding"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/base_line_padding"
+                            android:paddingTop="@dimen/base_line_padding"
+                            android:text="@string/Date_of_interest"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_qixi_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingBottom="@dimen/base_line_padding"
+                            android:paddingTop="@dimen/base_line_padding"
+                            android:text="2012-1-1"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/listview_driver_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/user_head_height"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:layout_marginRight="@dimen/base_line_padding"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/base_line_padding"
+                            android:paddingTop="@dimen/base_line_padding"
+                            android:text="@string/due_time"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_maturities"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingBottom="@dimen/base_line_padding"
+                            android:paddingTop="@dimen/base_line_padding"
+                            android:text="2012-1-1"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/listview_driver_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/user_head_height"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:layout_marginRight="@dimen/base_line_padding"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/base_line_padding"
+                            android:paddingTop="@dimen/base_line_padding"
+                            android:text="@string/investment_time"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_investment_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingBottom="@dimen/base_line_padding"
+                            android:paddingTop="@dimen/base_line_padding"
+                            android:text="2012-1-1"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/listview_driver_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </com.huaop2p.yqs.widget.FoldGroupView>
+
+            <include
+                layout="@layout/line_10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/hohelp_btn"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/transfer_mode2"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_line_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_bg"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="@string/sszr"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_content_size" />
+
+                    <RadioButton
+                        android:id="@+id/rb_jiaji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_bg"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="@string/jjzr"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/hohelp_btn"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/Total_transfer_amount"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_total_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="20000+19999"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_content_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="元"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_discount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/hohelp_btn"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/h_r_income4"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="reduce"
+                        android:src="@drawable/reduce" />
+
+                    <EditText
+                        android:id="@+id/et_value"
+                        android:layout_width="@dimen/dashed_height"
+                        android:text="0"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/ordinary_text_content_size"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle"
+                        android:padding="@dimen/base_line_padding" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="add"
+                        android:src="@drawable/add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="%"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/small_title_size" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_discount_value"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/make_profit"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_zr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_content_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="元"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:id="@+id/tv_Transfer_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/Transfer_fee"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fee_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="20000"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_content_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="元"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_head_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/listview_driver_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_line_padding"
+                    android:paddingTop="@dimen/base_line_padding"
+                    android:text="@string/Expected_return"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_content_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_huikuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_content_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_line_padding"
+                        android:paddingTop="@dimen/base_line_padding"
+                        android:text="元"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huaop2p.yqs.widget.ReboundScrollView>
+</RelativeLayout>

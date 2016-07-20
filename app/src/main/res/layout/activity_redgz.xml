@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/calcIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/corner_bg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linear_old_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_win_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="50元抵现红包"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_colse"
+                    android:layout_width="80dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gzxxx"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_title_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="适用产品"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/ipone_num_color" />
+
+            <TextView
+                android:id="@+id/txt_update_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="使用条件"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/ipone_num_color" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:layout_height="150dp">
+           <ListView
+               android:id="@+id/lv_itemview"
+               android:layout_width="250dp"
+               android:layout_height="130dp">
+
+
+           </ListView>
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/denglu"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="@color/white"
+            android:onClick="returnBack"
+            android:paddingBottom="3dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/back"/>
+
+
+        <TextView
+            android:id="@+id/TXT_APP_TITLE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="我的客户经理"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/img_tiaoguo"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:text="@string/tiaoguo"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="1dp"/>
+
+
+    <com.huaop2p.yqs.widget.ReboundScrollNormalView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay">
+
+        <!--relative_item_list_layout_nospace        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_bg_customer"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bann"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/img_cus_manager_photo"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:src="@drawable/cus_manager_none" />-->
+                <com.huaop2p.yqs.widget.CircleImageView
+                    android:id="@+id/img_cus_manager_photo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/cus_manager_none">
+
+                </com.huaop2p.yqs.widget.CircleImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-35dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_manager_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+
+            <RelativeLayout
+                android:background="@color/white"
+                style="@style/relative_item_list_layout_nospace_border">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/relative_item_list_text"
+                        android:text="隶属：" />
+
+                    <TextView
+                        android:id="@+id/txt_manager_organization"
+                        style="@style/relative_item_list_text"
+                        android:text="" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"></View>
+
+
+            <RelativeLayout
+                style="@style/relative_item_list_layout_nospace_border"
+                android:background="@color/white"
+                android:onClick="onIntroductClick">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/relative_item_list_text"
+                        android:text="个人信息" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_individual_arrow1"
+                    style="@style/relative_item_list_toright_img" />
+
+                <ImageView
+                    android:id="@+id/iv_individual_arrow2"
+                    style="@style/relative_item_list_todown_img"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_customer_detial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_customer_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="8dp"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_call400"
+                    android:layout_width="280dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/call_custom" />
+
+                <ImageView
+                    android:id="@+id/iv_call_connect"
+                    android:layout_width="280dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-20dp"
+                    android:src="@drawable/connect" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.huaop2p.yqs.widget.ReboundScrollNormalView>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/includeTitle"
+        layout="@layout/app_titl"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <com.huaop2p.yqs.module.base.view.ClearEditText
+        android:id="@+id/txt_forgetName"
+        style="@style/clear_edit_com_style"
+        android:drawableLeft="@drawable/shouji001"
+        android:hint="请输入您的手机号码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:layout_marginTop="50dp"
+        />
+    <Button
+        android:id="@+id/btn_forget"
+        style="@style/btn_nextT"
+        android:textColor="@color/white"
+        android:background="@drawable/huise_button"
+        android:clickable="false"
+        android:layout_margin="10dp"
+        android:text="@string/str_forget" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="vpi_title_text_color">#727373</color>
+    <color name="listview_driver_color">#e8e8e8</color>
+    <color name="dangqianshouyi">#C54AFF</color>
+    <color name="yuchebao">#59CBCD</color>
+    <color name="qianhui">#CACACA</color>
+    <color name="pink">#FED5D3</color>
+    <color name="yufangbao2">#C4E8FE</color>
+    <color name="textcolor">#878787</color>
+    <color name="textcolor4">#818181</color>
+    <color name="textcolor2">#9D9D9D</color>
+    <color name="textcolor3">#727272</color>
+    <color name="yuchebao2">#B7E9E9</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="status_text">#ffffffff</color>
+</resources>

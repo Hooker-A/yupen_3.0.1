@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/includeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="@color/white"
+            android:onClick="returnBack"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/back_width" />
+
+
+        <TextView
+            android:id="@+id/TXT_APP_TITLE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="摇一摇"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/imgBack_space"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:text="查看"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+    <!--<include-->
+    <!--android:id="@+id/includeTitle"-->
+    <!--layout="@layout/app_title_layout"-->
+    <!-- -->
+    <!--/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/shakeImgUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/includeTitle"
+        android:background="@drawable/bgt"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp">
+
+            <TextView
+                android:id="@+id/txt_cisuo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="您还可以摇 "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/np__number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/txt_cisuo"
+                android:text="0"
+                android:textColor="@color/oran"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/np__number"
+                android:text="次"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/shakeBg"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/hand" />
+
+        <Button
+            android:id="@+id/btn_guize"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/bgtt"
+            android:text="活动规则"
+
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</RelativeLayout>

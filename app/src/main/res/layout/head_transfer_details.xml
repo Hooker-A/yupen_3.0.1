@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/line1"
+        layout="@layout/line_10px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_activity_margin" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_margin="@dimen/base_line_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big_size" />
+
+    <LinearLayout
+        android:id="@+id/ll_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_name"
+        android:layout_marginRight="@dimen/base_line_padding"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dream_year_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:text="@string/str_dream_year_input"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/text_content_size" />
+
+    <TextView
+        android:id="@+id/home_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ll_flag"
+        android:layout_below="@+id/tv_name"
+        android:text="@string/home_date"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/text_content_size" />
+
+    <com.huaop2p.yqs.widget.CustomTextView
+        android:id="@+id/tv_gains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_dream_year_input"
+        app:bigSize="3"
+        app:smallSize="1.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_gains"
+        android:layout_toRightOf="@+id/tv_gains"
+        android:text="折让率"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/small_content_size" />
+
+    <com.huaop2p.yqs.widget.CustomTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_gains"
+        android:layout_alignBottom="@+id/tv_gains"
+        android:layout_alignRight="@+id/home_date"
+        android:layout_marginBottom="@dimen/base_line_padding"
+        android:text="12个月"
+        app:bigSize="2"
+        app:smallSize="1" />
+
+    <View
+        android:id="@+id/drive_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_activity_margin"
+        android:layout_below="@+id/tv_gains"
+        android:background="@color/listview_driver_color" />
+
+    <RelativeLayout
+        android:id="@+id/money_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashed_height"
+        android:layout_below="@+id/drive_line">
+
+        <include
+            android:id="@+id/drive_line2"
+            layout="@layout/line_10px"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/base_activity_margin" />
+
+        <TextView
+            android:id="@+id/dosage"
+            android:layout_width="@dimen/half_widght"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_activity_margin"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="@dimen/half_widght"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dosage"
+            android:gravity="center"
+            android:text="@string/zrje"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/residual_amount"
+            android:layout_width="@dimen/half_widght"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/base_activity_margin"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="@dimen/half_widght"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dosage"
+            android:gravity="center"
+            android:text="@string/zrsy"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_content_size" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/line2"
+        layout="@layout/line_10px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_activity_margin"
+        android:layout_below="@+id/money_detail" />
+
+    <LinearLayout
+        android:id="@+id/ll_buy_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashed_height"
+        android:layout_below="@+id/line2"
+        android:layout_margin="@dimen/base_line_padding"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_BuyTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buy_date"
+                android:textColor="@color/textcolor2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_wd_benjin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80000"
+                android:textColor="@color/textcolor2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wdqbj"
+                android:textColor="@color/textcolor2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_wd_shouyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wdqsy"
+                android:textColor="@color/textcolor2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/drive_line3"
+        layout="@layout/line_10px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_activity_margin"
+        android:layout_below="@+id/ll_buy_date" />
+
+    <LinearLayout
+        android:id="@+id/head_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drive_line3"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/head_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_progress"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30"
+            android:text="@string/Income_description"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/ordinary_text_content_size" />
+
+        <TextView
+            android:id="@+id/tv_Income_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px200"
+            android:gravity="center"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/text_content_size" />
+        <include
+            layout="@layout/line_10px"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_activity_margin"
+        />
+    </LinearLayout>
+</RelativeLayout>

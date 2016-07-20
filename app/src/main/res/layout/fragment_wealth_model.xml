@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.huaop2p.yqs.widget.FoundWebView
+        android:id="@+id/mWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_hiht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/web"
+        android:text="网页加载网址不存在"
+        android:textColor="@color/textcolor"
+        android:drawablePadding="10dp"
+        android:visibility="gone" />
+</FrameLayout>

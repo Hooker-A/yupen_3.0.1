@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">释放立即刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新…</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+
+    <string name="app_name">余盆</string>
+    <string name="app_namenn">余盆</string>
+    <string name="gesture_drawUnlock">绘制解锁图案</string>
+    <string name="lockpattern_recording_intro_header">"绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"演示如何绘制解锁图案"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">请创建一个锁定用户的手势密码，方便以后登录。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+    <string name="gesture_drawPwd">请绘制手势密码\n(输入错误可更换用户.)</string>
+    <string name="gesturepwd_unlock">3次失败后，需要重新登录。</string>
+    <string name="gesture_save">保存</string>
+    <string name="gesture_Redraw">重绘</string>
+    <string name="toastSetPedSucces">密码设置成功</string>
+    <string name="toastLogin">登录</string>
+    <string name="toastUnlock">解锁成功</string>
+    <string name="toastlock">您已3次输错密码，再试1次到登录界面。</string>
+    <string name="jihuanjianjie">计划简介:</string>
+    <string name="product_features">产品特点:</string>
+    <string name="investment_target">投资目标:</string>
+    <string name="investment">投资</string>
+    <string name="investment_success">投资成功</string>
+    <string name="lending_way">特色出借方式:</string>
+    <string name="fixed_period">固定期限:</string>
+    <string name="yuxinbao">余 信 宝:</string>
+    <string name="yufangbao">余 房 宝:</string>
+    <string name="yuchebao">余 车 宝:</string>
+    <string name="yuxinbao2">余信宝</string>
+    <string name="yufangbao2">余房宝</string>
+    <string name="yuchebao2">余车宝</string>
+    <string name="yue">可用余额:</string>
+    <string name="yue3">余额</string>
+    <string name="yue2">可用余额(元)</string>
+    <string name="Currentincome">当前收益:</string>
+    <string name="Currentincome2">当前收益(元)</string>
+    <string name="str_action_settings">设置</string>
+    <string name="str_app_name_title">余盆</string>
+    <string name="home_name_title">首页</string>
+    <string name="str_my_asset">我的财富</string>
+    <string name="str_asset_center">财富中心</string>
+    <string name="str_asset_center_details">财富详情</string>
+    <string name="transfer_record_details">转让中</string>
+    <string name="str_yp_crowd">余盆众筹</string>
+    <string name="str_more">更多</string>
+    <string name="str_title_activity_my_financial">我的资产</string>
+    <string name="str_exitLogOff">退出登录</string>
+    <string name="str_exitApp">确定要退出余盆软件吗</string>
+    <string name="str_cus_manager_is_lose">客户经理已不存在，请重新选择</string>
+    <string name="str_areYouLogoff">确定要退出？</string>
+    <string name="pay_mothod">支付方式</string>
+    <string name="investment_money">投资金额：</string>
+    <string name="investment_money2">投资金额(元)</string>
+    <string name="investment_money3">投资金额</string>
+    <string name="use_red">使用红包奖券：</string>
+    <string name="str_waiting">请您稍等</string>
+    <string name="str_back">返回</string>
+    <string name="str_login">登录</string>
+    <string name="str_aboutapp">关于余盆</string>
+    <string name="str_helper_customer">帮助中心</string>
+    <string name="str_message_push">消息推送</string>
+    <string name="str_concern_us">关注我们</string>
+    <string name="str_picture2d_id">二维码名片</string>
+    <string name="str_helper_app">意见反馈</string>
+    <string name="str_sys_notifier">系统通知</string>
+    <string name="str_urge_yqs">给予鼓励</string>
+    <string name="str_share2other">转发分享</string>
+    <string name="str_lottery_recard">抽奖信息</string>
+    <string name="str_guanzhu">关注我们</string>
+    <string name="sign">签到</string>
+    <string name="str_update_yqs">检查更新</string>
+    <string name="str_my_account">我的账户</string>
+    <string name="str_customer_manager">我的客户经理</string>
+    <string name="str_count_money">总资产</string>
+    <string name="str_count_money2">总投资额(元)</string>
+    <string name="investment_quota">投资额度:</string>
+    <string name="str_modify_pass">修改密码</string>
+    <string name="str_set_login_pass">修改登录密码</string>
+    <string name="str_set_invest_pass">设置交易密码</string>
+    <string name="str_open_gesture_pass">开启手势密码</string>
+    <string name="str_modify_gesture_pass">修改手势密码</string>
+    <string name="str_modify_gesture_code">我的二维码</string>
+    <string name="join_condition">加入条件:</string>
+    <string name="income_approach">收益方式:</string>
+    <string name="term_and_return">出售期限及收益:</string>
+    <string name="str_cus_server_phone">客服电话</string>
+    <string name="str_app_server_phone">400-838-9595</string>
+    <string name="str_cus_qq">客服QQ</string>
+    <string name="str_app_con_qq">56124236</string>
+    <string name="str_input_calc">收益计算</string>
+    <string name="str_apply_redeem">申购与赎回时间</string>
+    <string name="str_secrict_safe">安全保障</string>
+    <string name="str_support_bank">支持哪家银行</string>
+    <string name="str_holiday_input">节假日是否有收益</string>
+    <string name="str_input_deal_pass">请输入交易密码</string>
+
+    <string name="str_dream_year_input">预期年化收益</string>
+
+    <string name="str_more_helpr_phone">400-838-9595</string>
+    <string name="str_server_time">服务时间：9：00~18：00</string>
+    <string name="str_sms">短信</string>
+    <string name="str_weixin_haoyou">微信好友</string>
+    <string name="str_weixin_attention">关注微信</string>
+    <string name="str_weixin_pengyouquan">微信朋友圈</string>
+    <string name="str_tencent_attention">关注腾讯微博</string>
+    <string name="str_xinlang_weibo">新浪微博</string>
+    <string name="str_xinlang_weibo_attention">关注新浪微博</string>
+    <string name="str_qq_kongjian">QQ空间</string>
+    <string name="str_email">邮件</string>
+    <string name="str_qq">QQ</string>
+    <string name="str_tenxun_weibo">腾讯微博</string>
+
+    <string name="str_logoff_promit">您确定要退出登录？\n确定退出下次需要重新登陆</string>
+
+    <string name="str_percent">%</string>
+    <string name="str_dot">.</string>
+
+    <string name="str_share_to">分享到</string>
+    <string name="str_attentionour">关注我们</string>
+    <string name="str_goumai">购买</string>
+    <string name="cancel_transfer">取消转让</string>
+    <string name="Application_for_transfer">申请转让</string>
+    <string name="str_chongzhi">重置</string>
+    <string name="str_mini_price">起投金额1000元</string>
+    <string name="str_not_login">您还未登录，请您登陆</string>
+    <string name="zezq">转让专区</string>
+    <string name="nation">民族</string>
+    <string name="str_not_register">您还没有注册，请您注册</string>
+    <string name="str_not_deal_pass">您没有设置交易密码</string>
+<string name="Total_transfer_amount">转让总金额:</string>
+
+    <string name="qq_login_success">QQ登录成功</string>
+    <string name="qq_login_fail">QQ登录失败</string>
+    <string name="qq_login_cancel">QQ登录取消</string>
+
+    <string name="str_yes">是</string>
+    <string name="str_no">否</string>
+    <string name="str_set_password">设置密码</string>
+    <string name="str_input_password">\u0020请输入您的密码</string>
+    <string name="str_input_second_yout_pass">\u0020请再次输入您的密码</string>
+    <string name="str_input_pass_error">输入密码不正确</string>
+    <string name="str_register_fial">注册失败</string>
+    <string name="str_phoneNum">手机号</string>
+    <string name="str_forget_password">忘记密码</string>
+    <string name="str_set_deal_pass">设置交易密码</string>
+    <string name="str_confirm">确  定</string>
+    <string name="str_tijiao">提  交</string>
+    <string name="str_register">注册</string>
+    <string name="str_forget">发送短信验证码</string>
+    <string name="str_purcase_product">购买</string>
+    <string name="str_newpurcase"></string>
+    <string name="dosage">已投金额</string>
+    <string name="zrje">转让金额</string>
+    <string name="str_is_new_version">当前已是最新版本：v</string>
+    <string name="str_find_new_version">发现新版本</string>
+    <string name="str_curr_income">当前预期收益(元):</string>
+    <string name="expectedReturn">预期收益</string>
+    <string name="fee">手续费</string>
+    <string name="wdqsy">未到期收益</string>
+    <string name="due_time">到期时间:</string>
+    <string name="expectedReturn2">预期收益(元)</string>
+    <string name="str_no_have">无</string>
+    <string name="str_have">有</string>
+    <string name="str_name">姓名</string>
+    <string name="str_name2">姓名  :</string>
+    <string name="str_colon">:</string>
+    <string name="str_jiekuan">借款</string>
+    <string name="Borrowing_information">借款信息</string>
+    <string name="Loan_description">借款说明</string>
+    <string name="str_jiekuan2">借款 :</string>
+    <string name="str_next_step">完成</string>
+    <string name="str_comfirm_invest">确定购买</string>
+    <string name="str_send">发送</string>
+    <string name="str_borrowe_title">借款人</string>
+    <string name="str_borrowe_info">借款人信息</string>
+    <string name="str_borrowe_list">借款人</string>
+    <string name="str_cycle_borrower_list">本月循环出借</string>
+    <string name="str_dianzi_contract">电子合同</string>
+    <string name="str_colom">:</string>
+    <string name="str_bind_bank">绑定银行卡</string>
+
+    <string name="str_bank_card">银行卡号</string>
+    <string name="str_card_num">卡号</string>
+    <string name="str_bank">银行</string>
+    <string name="str_identity_valitor">身份认证</string>
+    <string name="str_bank_card_manager">银行卡管理</string>
+
+    <string name="str_promit_input_gs_pass">请输入手势密码</string>
+    <string name="str_sy_date">剩余：</string>
+    <string name="str_sy_date2">剩余</string>
+    <string name="ysy">已收益</string>
+    <string name="residual_maturity">剩余期限:</string>
+    <string name="Date_of_interest">起息日期:</string>
+    <string name="sy_day">剩余天数</string>
+    <string name="residual_amount">可投金额</string>
+    <string name="zrsy">转让收益</string>
+    <string name="manbiao_info">满标起息:</string>
+    <string name="residual_fraction">剩余份额:</string>
+    <string name="drop_down_list_header_default_text">Click to refresh&#8230;</string>
+    <string name="drop_down_list_header_pull_text">Drop Down to refresh&#8230;</string>
+    <string name="drop_down_list_header_release_text">Release to refresh&#8230;</string>
+    <string name="drop_down_list_header_loading_text">Loading&#8230;</string>
+    <string name="drop_down_list_footer_default_text">More</string>
+    <string name="drop_down_list_footer_loading_text">Loading&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">No More</string>
+
+    <string name="image_content">Image</string>
+    <string name="str_yuan">元</string>
+    <string name="str_day">天</string>
+    <string-array name="banks">
+        <item>请选择银行</item>
+        <item>中国银行</item>
+        <item>中国民生银行</item>
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+    </string-array>
+
+    <string name="str_read_app_protical">已阅读并同意</string>
+    <string name="str_app_protical">《余盆用户使用协议》</string>
+    <string name="str_app_soft_use_protical">《注册服务协议》</string>
+    <string name="str_app_service_protical">《余盆服务协议》</string>
+    <string name="str_prompt_close">提示：点击窗口外部关闭窗口！</string>
+
+    <string name="str_app_protect_promt">余盆不会在任何地方泄露您的个人信息</string>
+    <string name="str_recharge">充值</string>
+    <string name="str_recharge_card">充值银行卡</string>
+    <string name="zr_back_card">转入银行卡</string>
+    <string name="str_recharge_num">充值金额(元)</string>
+    <string name="str_cash_num">提现金额(元)</string>
+    <string name="str_cash_num2">提现金额</string>
+    <string name="str_recharge_num2">充值金额</string>
+    <string name="yjdzsj">预计到账时间:</string>
+    <string name="str_get_money">提现</string>
+    <string name="rate_of_return_of_the_product">本产品收益率</string>
+    <string name="Money_paid_through_rate_of_return">财付通收益率</string>
+    <string name="balance_treasure_yield">余额宝收益率</string>
+    <string name="regular_rate_of_bank_interest_rates">银行定期利率</string>
+    <string name="bank_current_interest_rate">银行活期利率</string>
+    <string name="cancel">取消</string>
+    <string name="goumai">继续购买</string>
+    <string name="current_interest">银行活期利息</string>
+    <string name="periodic_interest">银行定期利息</string>
+    <string name="yuebao_profit">余额宝收益</string>
+    <string name="caifutong_profit">财付通收益</string>
+    <string name="jie">借</string>
+    <string name="bdzq">标的周期</string>
+    <string name="onclick">点击"支付"按钮,即代表同意</string>
+    <string name="cjfuxy">《出借服务协议》</string>
+    <string name="update_money">修改投资金额</string>
+    <string name="hiht">登录账号后才可以看到我的财富哦~</string>
+    <string name="balance_hiht">余额不足</string>
+    <string name="sszr">线上转让</string>
+    <string name="jjzr">加急转让</string>
+    <string name="Income_description">收益说明</string>
+    <string name="product_name2">产品名称:</string>
+    <string name="real_estate_certificate">房产证复印件</string>
+    <string name="loan_contract">借款合同</string>
+    <string name="hukou_book">户口本</string>
+    <string name="ID_card_copy">身份证复印件</string>
+    <string name="gong">共</string>
+    <string name="personal_data">个人资料</string>
+    <string name="personal_info">个人信息</string>
+    <string name="jkbxx">借款标信息</string>
+    <string name="work_state">工作状况</string>
+    <string name="related_data">相关资料</string>
+    <string name="fxfk">风险防控</string>
+    <string name="investment_time">投资时间:</string>
+    <string name="investment_time2">投资时间</string>
+    <string name="ren">人</string>
+    <string name="huankuan">笔还款记录</string>
+    <string name="qixi_day">起息日 :   </string>
+    <string name="expire_day">到期日:   </string>
+    <string name="history">历史</string>
+    <string name="look_detail">查看详情</string>
+    <string name="look">查看</string>
+    <string name="buy_again">继续投资</string>
+    <string name="view_contract">查看合同</string>
+    <string name="benchanpin_expectedreturn">本产品预期收益</string>
+    <string name="fuyou">富友</string>
+    <string name="purpose">用途  :</string>
+    <string name="investor">投资人</string>
+    <string name="transfer_record">转让记录</string>
+    <string name="transfer_mode">转让方式</string>
+    <string name="transfer_mode2">转让方式:</string>
+    <string name="starting_date">起投日期</string>
+    <string name="contract_number">合同单号</string>
+    <string name="danjifeng">单季丰</string>
+    <string name="product_name">产品名称</string>
+    <string name="investment_amount">投资金额</string>
+    <string name="liandongyoushi">联动优势</string>
+    <string name="chongzhi">马上充值</string>
+    <string name="try_again">重试</string>
+    <string name="goon">继续</string>
+    <string name="confirm">确认</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_forg_gs_pass">忘记手势密码</string>
+    <string name="str_forg_gs_pa">其他账户登录</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="str_input_pass_not_sure">输入密码不一致</string>
+    <string name="lockpattern_error">"手势密码不正确"</string>
+    <string name="str_download">下载更新</string>
+    <string name="str_donwload_next">以后再说</string>
+    <string name="str_download_prompt">有新版本</string>
+    <string name="str_update_log">更新日志：</string>
+    <!--产品描述相关。。。。。。。。。。。。。。。-开始-->
+    <string name="str_asset_pattern_title">财富管理模式</string>
+    <string name="str_rist_control_title">风险防控</string>
+    <string name="str_more_detial_title">常见问题</string>
+
+    <!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+
+    <string name="app_back">返回</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_continue">继续</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="app_set">设置</string>
+    <string name="app_save">保存</string>
+    <string name="app_delete">删除</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_prevstep">上一步</string>
+    <string name="app_finish">完成</string>
+    <string name="app_find">查找</string>
+    <string name="app_edit">编辑</string>
+    <string name="loan_circulate_data">持有时间：</string>
+    <!-- applet -->
+    <string name="applet_secimg_title">填写验证码</string>
+    <string name="applet_secimg_change">换一张图片</string>
+    <string name="applet_seccode_tip">验证码不能为空</string>
+    <string name="applet_seccode_fail_tip">验证码错误，请重新输入</string>
+    <string name="str_reset_gs_pass">重新设置</string>
+    <string name="str_cancel_set_gs_pass">放弃设置</string>
+    <string name="str_gs_pass_null">您的手势密码过于简单</string>
+    <!-- verify -->
+    <string name="verify_password_null_tip">密码不能为空，请输入密码</string>
+
+    <!-- format -->
+    <string name="fmt_date">M月d日</string>
+    <string name="year">年</string>
+    <string name="mouth">月</string>
+    <string name="fmt_longdate">yyyy年M月d日</string>
+    <string name="fmt_datetime" formatted="false">M月d日 %skk:mm</string>
+    <string name="fmt_patime">kk:mm</string>
+    <string name="fmt_longtime" formatted="false">yyyy年M月d日 %skk:mm</string>
+    <string name="fmt_in60min" formatted="false">%d分钟前</string>
+    <string name="fmt_justnow">1分钟内</string>
+    <string name="fmt_dawn">凌晨</string>
+    <string name="fmt_morning">早上</string>
+    <string name="fmt_noon">中午</string>
+    <string name="fmt_afternoon">下午</string>
+    <string name="fmt_evening">晚上</string>
+    <string name="fmt_pre_yesterday">昨天</string>
+    <string name="fmt_iap_err" formatted="false">网络连接不可用，请稍候重试</string>
+
+    <string name="hello">Hello World, SDKSampleActivity!</string>
+    <string name="app_share">分享</string>
+
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+
+    <string name="send_to_wx_title">发送到微信</string>
+    <string name="get_from_wx_title">从微信接收</string>
+    <string name="show_from_wx_title">显示微信请求的消息</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+
+    <string name="str_welcome_share_yupen">余盆，有保障，投小钱，积财富!点击下载！</string>
+
+
+    <string name="send_img_file_not_exist">文件不存在</string>
+
+    <string name="send_pic">发送照片</string>
+
+
+    <string name="str_orginal_password">原始密码</string>
+    <string name="str_modify_pass_not_same">新密码不一致</string>
+    <string name="str_pass_must_grate_6">密码长度应该大于6</string>
+    <string name="str_error_net_conect">亲，您的网络不给力</string>
+    <string name="str_eror_net_update">获取升级信息有误</string>
+    <string name="str_please_login">您还没有登录，请您登陆</string>
+    <string name="str_out_window_close">点击窗口外部关闭</string>
+    <!--用户//////////////////////////start///////////////////////////////////////////////////////////////////////////////////////////////提示-->
+
+    <!--姓名提示-->
+
+    <string name="str_is_empty_name">用户名不能为空</string>
+    <string name="str_error_name">用户名不正确</string>
+
+    <!--身份证提示-->
+    <string name="str_is_empty_idcard">身份证号不能为空</string>
+    <string name="str_error_idcard">身份证号不正确</string>
+
+    <!--邮箱提示-->
+    <string name="str_is_empty_email">邮箱不能为空</string>
+    <string name="str_error_email">邮箱不正确</string>
+
+    <string name="str_is_empty_idcard_photo">没有身份证正面照</string>
+    <string name="str_is_empty_idcar_photo_reverse">没有身份证反面照片</string>
+    <!--用户//////////////////////////ender//////////////////////////////////////////////////////////////////////////////////////////////提示-->
+
+
+    <!--下拉list//////////////////////////start//////////////////////////////////////////////////////////////////////////////////////////////提示-->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="pull_loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+
+    <string name="xlistview_header_hint_normal">下拉可以刷新</string>
+    <string name="xlistview_header_hint_ready">释放立即刷新</string>
+    <string name="xlistview_header_hint_loading">正在刷新…</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">释放载入更多</string>
+    <string name="loading_over">已经是最后一页</string>
+    <!--下拉list//////////////////////////ender//////////////////////////////////////////////////////////////////////////////////////////////提示-->
+
+    <string name="str_please_select_cus_manager">可以点击下面的按钮申请一位</string>
+    <string name="str_request_customer_manager">申请客户服务经理</string>
+
+    <string name="scan_text">二维码放入框内即可扫描，或者</string>
+    <string name="scan_text_com">二维码放入框内即可扫描</string>
+
+    <string name="str_fuiou_secrity_set_password">为了您的财产安全，我们将单独为您开设用户资金往来的“金账户”，请您填写金账户登录密码和提现密码。</string>
+
+    <string name="str_invest_protect">翼时代有充足的还款风险金保证每位投资人的权益</string>
+
+    <string name="str_set_gesture">请设置手势密码</string>
+    <string name="str_volidate_set_gesture">验证手势密码</string>
+    <string name="str_gesture_two_pass_error">两次密码不一致，请重新输入</string>
+    <string name="str_getsture_seccuss">手势密码设置成功</string>
+    <string name="str_second_gesture">请再次输入新密码</string>
+    <string name="str_input_new_gs_pass">请输入新密码</string>
+
+    <!--投诉客户经理-->
+    <string name="str_complain_cus_manager">400-838-9595</string>
+    <string name="str_tousu_cus_manager">投诉客户经理</string>
+    <string name="str_customer_ralative">关联我的客户经理</string>
+    <string name="str_connect_cus_manager">联系客户经理</string>
+    <string name="str_prompt">提示</string>
+    <string name="are_you_exit_app">你确定要退出应用吗?</string>
+    <string name="str_input_cus_manager_card">请输入客户经理手机号或工号</string>
+    <string name="str_identity_validate_prompt">您还没有进行身份认证，若要继续，请先身份认证</string>
+    <string name="str_identity_validate">身份认证</string>
+    <string name="str_product_having_is_null">当前产品没有库存，请重新选择</string>
+    <string name="str_holiday_des">节假日之前购买，节假日有收益。</string>
+    <string name="str_already_identity_phonenumber">手机号码：</string>
+    <string name="str_already_identity_name">客户姓名：</string>
+    <string name="str_already_identity_card_number">身份证号：</string>
+    <string name="str_already_identiy_bank">开户行行别：</string>
+    <string name="str_already_identity_bank_card_number">银行卡号：</string>
+    <string name="str_net_time_long">网络连接时间较长，请您稍等...</string>
+    <string name="calculation_method">计算方式:</string>
+    <string name="calculation_method2">计息方式</string>
+    <string name="yp_home">首页</string>
+    <string name="calulator">收益计算器</string>
+    <string name="borrower_details">借款人详情</string>
+    <string name="inverstment_term">投资期限:</string>
+    <!-- 余盆产品页面计算器 -->
+    <string name="counter_msg">亲,还没有相关产品</string>
+    <!-- 首页 -->
+    <string name="home_crowdfunding">余盆众筹</string>
+    <string name="h_c_hot">火热抢购</string>
+    <string name="h_recommend">为您推荐:</string>
+    <string name="h_r_income">预期年化收益</string>
+    <string name="h_r_income2">预期年化收益率</string>
+    <string name="h_r_income3">折让年化收益率</string>
+    <string name="h_r_income4">折让年化收益率:</string>
+    <string name="percentages">预期年化收益率:</string>
+    <string name="h_r_income5">年化利率</string>
+    <string name="make_profit">折让收益:</string>
+    <string name="Transfer_fee">平台转让手续费(0.5%):</string>
+    <string name="Transfer_fee2">平台转让手续费(2%):</string>
+    <string name="h_r_date">期限</string>
+    <string name="h_r_putin_value">投起额</string>
+    <string name="h_r_base_income">本金收益</string>
+    <string name="h_r_safe">双重保障</string>
+    <string name="wdqbj">未到期本金</string>
+    <string name="crowdfunding_info">众筹详情</string>
+    <string name="market_putin">优选投资</string>
+    <string name="market_crowdfunding">余盆众筹</string>
+    <string name="all_cash">全部提现</string>
+    <string name="all_hangye">全部行业</string>
+    <string name="all_diqu">全部筹类</string>
+    <string name="all_status">全部状态</string>
+    <string name="up">起</string>
+    <string name="complate">完成</string>
+    <string name="zhichi">支持</string>
+    <string name="huibao">回报</string>
+    <string name="pinglun">评论</string>
+    <string name="dongtai">动态</string>
+    <string name="home_touru">马上投</string>
+    <string name="attention">关注</string>
+    <string name="attention_cancel">取消关注</string>
+
+    <string name="str_consigness_address">收货人地址</string>
+    <string name="str_consigness_information">收货人信息</string>
+    <string name="str_add_consigness_infromatino">添加收货人信息</string>
+    <string name="str_huibao_msg">回报信息</string>
+    <string name="str_zhongchouzhong">众筹中</string>
+    <string name="str_crowdfunding_more">更多》</string>
+    <string name="huibao_up">立即支持</string>
+    <string name="lottery_recard">我的抽奖记录</string>
+    <string name="lottery_activity">抽奖</string>
+
+    <string name="loading">正在加载，请稍等...</string>
+    <string name="net_error">请检查网络连接是否正常</string>
+
+    <string name="lottery_get">恭喜您抽到了</string>
+    <string name="lottery_drop">很遗憾您未抽到</string>
+    <string name="lottery_putin">返回投资</string>
+    <string name="lottery_look">查看奖品记录</string>
+    <string name="lottery_rule">活动规则</string>
+    <string name="rule_content">活动规则\n1、活动期间内，用户投资任意一款期限的余盆精英标即获得1次抽奖机会，多投多得，无上限设置。\n2、活动期间内，奖品将通过快递发送，中奖的用户会有专门的客服人员联系，奖品会在活动结束后一周内寄出。请确认您的账户手机绑定号码是否真实有效，若客服人员在5个工作日内无法与中奖客户取得联系，则视为用户主动放弃奖品。\n3、严禁使用非本人身份证、银行卡恶意刷奖，一经发现，立即取消活动资格。\n4、本活动规则解释权归北京华澳翼时代信息技术有限责任公司所有，如有疑问请拨打400-897-7799（工作日9:00到18:00）</string>
+    <string name="message_activity">消息推送</string>
+    <string name="accounts">我的账户</string>
+    <string name="manager">客户经理</string>
+    <string name="ipone_num">400-838-9595</string>
+    <string name="serve_time">服务时间:9:00~18:00</string>
+    <string name="home_message"><Data><![CDATA[<font color="#6c6c6c"><b>累计成交&nbsp</b></font><font color="#FF0000"><b>%1$s</b></font><font color="#6c6c6c"><b>万元&nbsp&nbsp</b></font><font color="#6c6c6c"><b>运营时间&nbsp</b></font><font color="#FF0000"><b>%2$s</b></font><font
+        color="#6c6c6c"><b>天&nbsp&nbsp</b></font><font color="#6c6c6c"><b>注册用户&nbsp</b></font><font color="#FF0000"><b>%3$s</b></font><font color="#6c6c6c"><b>万人</b></font>]]></Data></string>
+    <string name="system_error">系统异常</string>
+
+    <string name="lottery_record_title">奖品记录</string>
+
+    <string name="hongbaolist">选择红包</string>
+    <string name="hongbao">红包</string>
+    <string name="dixian_hongbao">抵现红包</string>
+    <string name="goumaicnengong">购买成功</string>
+    <string name="buy_date">购买日期</string>
+    <string name="day">日</string>
+    <string name="yuebuzu">余额不足</string>
+    <string name="xunwen">购买金额:</string>
+    <string name="invest_term">可投金额</string>
+    <string name="Expected_return">预计回款:</string>
+    <string name="chanpin">购买产品:</string>
+    <string name="chanpin_name">产品名称</string>
+    <string name="Generate_income">已产生收益:</string>
+    <string name="yuan">元</string>
+    <string name="total">合计:</string>
+    <string name="queding">确定</string>
+    <string name="tiaoguo">跳过</string>
+    <string name="fanhui">返回首页</string>
+    <string name="kuohao">(</string>
+    <string name="kuohoa">)</string>
+    <string name="lottery_no_win">谢谢参与</string>
+    <string name="rmb">￥</string>
+    <string name="str_hang">行业</string>
+    <string name="str_crowd">筹类</string>
+    <string name="str_status">状态</string>
+    <string name="str_zhichi">人已支持</string>
+    <string name="str_attentionlist">关注列表</string>
+    <string name="str_crowdorder">众筹订单</string>
+    <string name="str_crowdall">全部</string>
+    <string name="str_crowdwait">待回报</string>
+    <string name="str_crowdalready">已回报</string>
+    <string name="str_crowd_text">您还没有订单</string>
+    <string name="str_crowd_amount">金  额:￥</string>
+    <string name="home_dates">投资期限 : </string>
+    <string name="home_date">投资期限 </string>
+    <string name="dispatching">配送费用 : </string>
+    <string name="dispatching_time">预期配送时间 : </string>
+    <!-- 更多页面的text-->
+    <string name="str_jingli">客户经理</string>
+    <string name="str_zaixian">在线服务</string>
+    <string name="str_yijian">意见反馈</string>
+    <string name="str_wenti">帮助中心</string>
+    <string name="str_yindao">引导页面</string>
+    <string name="str_zhuanfa">转发分享</string>
+    <string name="str_touzi">投资性格评估</string>
+    <string name="investment_record">投资记录</string>
+    <string name="history_investment_record">历史投资记录</string>
+    <string name="investment_details">持有投资详情</string>
+    <string name="str_jiancha">检查更新</string>
+    <string name="str_shezhi">设置</string>
+    <string name="str_guanyu">关于余盆</string>
+    <string name="str_tuichu">安全退出</string>
+    <string name="str_ziliao">我的资料</string>
+    <string name="born">出生</string>
+    <string name="str_erweima">我的二维码</string>
+    <string name="str_xiugai">修改登录密码</string>
+    <string name="str_kaiqi">开启手势密码</string>
+    <string name="str_shezhishoushi">设置手势密码</string>
+    <!-- 个人中心页面-->
+    <string name="str_touxiang">头像</string>
+    <string name="str_nicheng">昵称</string>
+    <string name="str_xingbie">性别</string>
+    <string name="str_iphone">手机号</string>
+    <string name="str_youxiang">邮箱</string>
+    <string name="str_diqu">所在地区</string>
+    <string name="str_dizhi">收货地址</string>
+    <string name="str_address">地址</string>
+    <string name="card_type">证件类型</string>
+    <string name="card_num">证件号码</string>
+    <string name="str_boy">男</string>
+    <string name="str_gril">女</string>
+    <string name="str_secrecy">保密</string>
+
+    <string name="viewfinderview_status_text1">将二维码/条码放入框内,即可自动扫描</string>
+
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <string name="msg_camera_framework_bug">您好，扫一扫需要调用手机摄像头。请在手机设置里配制开启调用摄像头的权限。</string>
+    <string name="button_ok">OK</string>
+    <string name="pay">支付</string>
+
+
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="post_amount">邮费</string>
+    <string name="lottery">奖券</string>
+
+    <string-array name="spnniersex">
+        <item>日</item>
+        <item>月</item>
+    </string-array>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/base_line_padding"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px40"
+        android:layout_marginRight="@dimen/px40"
+        android:background="@drawable/rectangle_alpha"
+        android:orientation="vertical"
+        android:padding="@dimen/base_line_padding"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_activity_margin"
+                android:layout_marginTop="@dimen/base_line_padding"
+                android:text="@string/str_name2"
+                android:textColor="@color/vpi_title_text_color"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <TextView
+                android:id="@+id/tv_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_name"
+                android:layout_toRightOf="@+id/tv_name"
+                android:text="任洋"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/tv_purpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_activity_margin"
+                android:layout_marginTop="@dimen/base_line_padding"
+                android:text="用途"
+                android:textColor="@color/vpi_title_text_color"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <TextView
+                android:id="@+id/tv_purpose_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_purpose"
+                android:layout_toRightOf="@+id/tv_purpose"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp16" />
+
+
+            <TextView
+                android:id="@+id/tv_ID_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_purpose"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:layout_marginRight="@dimen/base_activity_margin"
+                android:layout_marginTop="@dimen/base_line_padding"
+                android:text="@string/str_already_identity_card_number"
+                android:textColor="@color/vpi_title_text_color"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <TextView
+                android:id="@+id/tv_ID_card_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_ID_card"
+                android:layout_toRightOf="@+id/tv_ID_card"
+                android:text="2222222"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp16" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

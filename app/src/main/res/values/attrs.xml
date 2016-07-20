@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="drop_down_list_attr">
+        <attr name="isDropDownStyle" format="boolean"/>
+        <attr name="isOnBottomStyle" format="boolean"/>
+        <attr name="isAutoLoadOnBottom" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="LockPatternView">
+        <!-- Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height" -->
+        <attr name="aspect" format="string"/>
+    </declare-styleable>
+    <!--滚动条-->
+    <declare-styleable name="ScrrollProductView">
+        <attr name="isEnableScroll" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="InvestProgressView">
+        <attr name="ringWidth" format="dimension"></attr>
+        <attr name="bgWidth" format="dimension"></attr>
+        <attr name="bgColor" format="color"></attr>
+        <attr name="progColor" format="color"></attr>
+        <attr name="ringColor" format="color"></attr>
+        <attr name="txtSizeBig" format="dimension"></attr>
+        <attr name="txtSizeSm" format="dimension"></attr>
+
+    </declare-styleable>
+
+    <!--圆形进度条-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="content_date_color" format="color"></attr>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="isShowDetialPercent" format="boolean"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewfinderView">
+        <attr name="isCom" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension"/>
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float"/>
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="CustomTextView">
+        <attr name="ctext" format="string" />
+        <attr name="ctextColor" format="color" />
+        <attr name="bigSize" format="float" />
+        <attr name="smallSize" format="float" />
+    </declare-styleable>
+    <attr name="borderRadius" format="dimension" />
+    <attr name="lineColor" format="color"/>
+    <attr name="contentColor" format="color"/>
+    <declare-styleable name="ProgressView">
+        <attr name="borderRadius" />
+        <attr name="contentColor" />
+        <attr name="lineColor" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        -                                                <attr name="ptrMode">
+        <flag name="disabled" value="0x0" />
+        <flag name="pullFromStart" value="0x1" />
+        <flag name="pullFromEnd" value="0x2" />
+        <flag name="both" value="0x3" />
+        <flag name="manualOnly" value="0x4" />
+        <!-- These last two are depreacted -->
+        <flag name="pullDownFromTop" value="0x1" />
+        <flag name="pullUpFromBottom" value="0x2" />
+    </attr>
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+        <!-- Style of Animation should be used displayed when pulling. -->
+        -                                                <attr name="ptrAnimationStyle">
+        <flag name="rotate" value="0x0" />
+        <flag name="flip" value="0x1" />
+    </attr>
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+        <!-- Whether PullToRefreshListView has it's extras enabled. This allows the user to be able to scroll while refreshing, and behaves better. It acheives this by adding Header and/or Footer Views to the ListView. -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+        <!-- Whether the Drawable should be continually rotated as you pull. This only takes effect when using the 'Rotate' Animation Style. -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+
+</resources>

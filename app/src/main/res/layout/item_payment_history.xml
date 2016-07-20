@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listview_driver_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/base_line_padding"
+        android:layout_marginRight="@dimen/base_line_padding"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/rounded_rectangle_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_rectangle_blue"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_line_padding">
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2/2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_activity_margin"
+                android:text="还款日期"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_activity_margin"
+                android:text="2016-11-1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ordinary_text_content_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_yinghuan_benjin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/base_activity_margin"
+                android:layout_marginTop="@dimen/base_line_padding"
+                android:text="应还本金:"
+                android:textColor="@color/yufangbao"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <TextView
+                android:id="@+id/tv_benjin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/base_activity_margin"
+                android:layout_marginTop="@dimen/base_line_padding"
+                android:layout_toRightOf="@+id/tv_yinghuan_benjin"
+                android:text="200元"
+                android:textColor="@color/yufangbao"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <TextView
+                android:id="@+id/tv_yinghuan_lixi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_yinghuan_benjin"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/base_activity_margin"
+                android:layout_marginTop="@dimen/base_line_padding"
+                android:text="应还利息:"
+                android:textColor="@color/yufangbao"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <TextView
+                android:id="@+id/tv_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_yinghuan_lixi"
+                android:layout_marginRight="@dimen/base_activity_margin"
+                android:layout_toRightOf="@+id/tv_yinghuan_lixi"
+                android:text="200元"
+                android:textColor="@color/yufangbao"
+                android:textSize="@dimen/ordinary_text_content_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/base_line_padding"
+                android:layout_centerVertical="true"
+                android:src="@drawable/daihuankuan" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

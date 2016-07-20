@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="5dp">
+
+        <SpinnerView
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </SpinnerView>
+        <!--<EditText-->
+        <!--style="@style/applay_editext_style"-->
+        <!--android:gravity="bottom"-->
+        <!--android:background="@null"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:id="@+id/txt_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<Spinner-->
+        <!--android:gravity="center"-->
+        <!--style="@style/applay_spinner_style"-->
+        <!--android:background="@drawable/btn_dropdown_spinner"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:id="@+id/spinner_to_select"-->
+        <!--android:layout_height="wrap_content"></Spinner>-->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_title_height"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/vpi__tab_unselected_holo"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_head_image"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/right_image_height"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:onClick="back"
+                        android:src="@drawable/back" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="@string/calulator"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_title_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right"></LinearLayout>
+            </LinearLayout>
+
+            <com.huaop2p.yqs.widget.ReboundScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_inverstment_str"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/inverstment_term"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/ordinary_text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0个月"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/ordinary_text_content_size" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/user_head_height"
+                        android:layout_margin="@dimen/base_line_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/benchanpin_expectedreturn"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ordinary_text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_topOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ordinary_text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px60"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:layout_marginRight="@dimen/base_line_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/caifutong_profit"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/select_text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_caifutong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/select_text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/textcolor2" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px60"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:layout_marginRight="@dimen/base_line_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/yuebao_profit"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/select_text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_yuebao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/select_text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/textcolor2" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px60"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:layout_marginRight="@dimen/base_line_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/periodic_interest"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/select_text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_dingqi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/select_text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/textcolor2" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px60"
+                        android:layout_marginLeft="@dimen/base_line_padding"
+                        android:layout_marginRight="@dimen/base_line_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/current_interest"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/select_text_content_size" />
+
+                        <TextView
+                            android:id="@+id/tv_huoqi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/select_text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/textcolor2" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dashed_height"
+                        android:layout_margin="@dimen/base_line_padding">
+
+                        <TextView
+                            android:id="@+id/tv_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/investment_money2"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ordinary_text_content_size" />
+
+                        <EditText
+                            android:id="@+id/et_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_left"
+                            android:gravity="center|right"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/dashed_height"
+                            android:minWidth="@dimen/px200"
+                            android:hint="请输入投资金额"
+                            android:maxLength="11"
+                            android:background="@null"
+                            android:textColorHint="@color/light_grey"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ordinary_text_content_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/red" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.huaop2p.yqs.widget.ReboundScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

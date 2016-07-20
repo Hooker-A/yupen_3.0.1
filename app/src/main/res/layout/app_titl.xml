@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:minHeight="45dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left|center"
+            android:background="@color/white"
+            android:onClick="returnBack"
+            android:paddingBottom="3dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back"/>
+
+
+        <TextView
+            android:id="@+id/TXT_APP_TITLE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/imgBack_space"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:background="@color/light_grey"
+        android:padding="0dp"></View>
+</LinearLayout>

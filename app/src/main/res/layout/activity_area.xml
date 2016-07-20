@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/includeTitle"
+        layout="@layout/app_titl" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="您的位置"
+        android:background="@color/car"
+        android:textColor="@color/white" />
+
+    <com.huaop2p.yqs.module.base.view.ClearEditText
+         android:id="@+id/txt_area"
+        android:layout_width="match_parent"
+        android:textCursorDrawable="@null"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/bankaddse"
+        android:background="@drawable/txt_z_view"
+         android:textColor="@color/black"
+         android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/city_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@color/white"
+            android:dividerHeight="2dp" />
+
+
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="#606060"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.huaop2p.yqs.widget.SideBar
+            android:id="@+id/city_loactionbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:paddingBottom="2dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

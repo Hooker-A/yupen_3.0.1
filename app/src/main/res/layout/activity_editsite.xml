@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_cler"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="returnBack"
+                android:text="取消"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+
+
+            <TextView
+                android:id="@+id/TXT_APP_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="编辑收货地址"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/bt_space"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textColor="@color/huise"
+                android:text="保存"
+                android:textSize="15sp"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ipone_num_color"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="收 货 人"
+            android:layout_marginLeft="10dp"
+
+            />
+        <EditText
+            android:id="@+id/et_ren"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:textSize="15sp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/include_linearlayout_left_space_view"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ipone_num_color"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="联系方式"
+            android:layout_marginLeft="10dp"
+
+            />
+        <EditText
+            android:id="@+id/et_iphone"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:textSize="15sp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/include_linearlayout_left_space_view"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ipone_num_color"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="所在地区"
+            android:layout_marginLeft="10dp"
+
+            />
+        <EditText
+            android:id="@+id/et_addrs"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:textSize="15sp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/include_linearlayout_left_space_view"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ipone_num_color"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="邮       编"
+            android:layout_marginLeft="10dp"
+
+            />
+        <EditText
+            android:id="@+id/et_emms"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:textSize="15sp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/include_linearlayout_left_space_view"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ipone_num_color"
+            android:textSize="15sp"
+            android:gravity="top"
+            android:text="详细地址"
+            android:layout_marginLeft="10dp"
+
+            />
+        <EditText
+            android:id="@+id/et_addrrs"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:textSize="15sp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

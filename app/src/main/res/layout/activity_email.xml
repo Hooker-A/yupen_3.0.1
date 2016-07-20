@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left|center"
+            android:background="@color/white"
+            android:onClick="returnBack"
+            android:paddingBottom="3dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back"/>
+
+
+        <TextView
+            android:id="@+id/TXT_APP_TITLE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="邮箱"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/imgOk"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:text="@string/queding"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <com.huaop2p.yqs.module.base.view.ClearEditText
+            android:id="@+id/txt_emil"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请输入您的邮箱"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/txt_z_view"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+    <!--<com.huao.yupen_three.module.base.view.ClearEditText-->
+        <!--android:id="@+id/txt_emil"-->
+        <!--style="@style/clear_edit_com_style"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:hint="请输入您的邮箱"-->
+        <!--android:maxLength="20"-->
+        <!--/>-->
+
+
+</LinearLayout>

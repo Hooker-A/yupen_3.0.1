@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="55dp"
+    android:background="#e8e8e8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有更多有效奖券了 |  "
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/textview_overRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看过期奖券>"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

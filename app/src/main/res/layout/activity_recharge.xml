@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        android:background="@drawable/vpi__tab_unselected_holo"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/ll_head_image"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:onClick="back">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/right_image_height"
+                android:layout_marginLeft="@dimen/base_line_padding"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TXT_APP_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/str_recharge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_title_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.huaop2p.yqs.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/listview_driver_color"
+                android:paddingBottom="@dimen/base_activity_margin"
+                android:paddingLeft="@dimen/base_line_padding"
+                android:paddingTop="@dimen/base_activity_margin"
+                android:text="@string/str_recharge_card"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small_content_size" />
+
+            <com.huaop2p.yqs.widget.CustomGridView
+                android:id="@+id/c_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" />
+
+            <include layout="@layout/line_10px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/base_line_padding"
+                    android:text="充值金额"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/ordinary_text_content_size" />
+
+                <LinearLayout
+                    android:id="@+id/ll_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/px5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:onClick="subtract"
+                        android:src="@drawable/reduce" />
+
+                    <EditText
+                        android:id="@+id/et_money"
+                        android:layout_width="@dimen/head_height"
+                        android:layout_height="60px"
+                        android:background="@drawable/rectangle"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:numeric="decimal"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        />
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:onClick="add"
+                        android:src="@drawable/add" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/listview_driver_color"
+                    android:padding="@dimen/base_line_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大写"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/ordinary_text_content_size" />
+
+                    <TextView
+                        android:id="@+id/tv_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/ordinary_text_content_size" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dashed_height"
+                    android:layout_gravity="bottom"
+                    android:background="@color/red"
+                    android:onClick="recharge"
+                    android:text="@string/str_recharge"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ordinary_text_content_size" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.huaop2p.yqs.widget.ReboundScrollView>
+</LinearLayout>

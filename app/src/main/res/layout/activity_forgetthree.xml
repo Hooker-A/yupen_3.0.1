@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/app_titl"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            >
+            <com.huaop2p.yqs.module.base.view.ClearEditText
+                android:id="@+id/txt_forgetpass1"
+                style="@style/clear_edit_com_style"
+                android:drawableLeft="@drawable/mima001"
+                android:hint="请输入新密码"
+                android:password="true"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            >
+        <com.huaop2p.yqs.module.base.view.ClearEditText
+            android:id="@+id/txt_forgetpass2"
+            style="@style/clear_edit_com_style"
+            android:drawableLeft="@drawable/mima001"
+            android:hint="请再次输入新密码"
+            android:password="true"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <Button
+                android:id="@+id/btn_forget"
+                style="@style/btn_nextT"
+                android:text="@string/app_ok" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
